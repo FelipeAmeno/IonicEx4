@@ -1,0 +1,9 @@
+<ion-item class="ion-margin-top" lines="block" color="none">
+    <ion-input class="input" type="email" placeholder="E-mail" color="light" [(ngModel)]="userLogin.email"></ion-input>
+</ion-item>
+<ion-item class="ion-margin-top" lines="block" color="none">
+    <ion-input class="input" type="password" placeholder="Senha" color="light" [(ngModel)]="userLogin.password"></ion-input>
+</ion-item>
+<ion-button class="ion-margin-top" (click)="login()" color="none">
+    <span class="login">Entrar</span>
+</ion-button>
