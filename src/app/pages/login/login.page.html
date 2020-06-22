@@ -1,9 +1,28 @@
-<ion-item class="ion-margin-top" lines="block" color="none">
-    <ion-input class="input" type="email" placeholder="E-mail" color="light" [(ngModel)]="userLogin.email"></ion-input>
-</ion-item>
-<ion-item class="ion-margin-top" lines="block" color="none">
-    <ion-input class="input" type="password" placeholder="Senha" color="light" [(ngModel)]="userLogin.password"></ion-input>
-</ion-item>
-<ion-button class="ion-margin-top" (click)="login()" color="none">
-    <span class="login">Entrar</span>
-</ion-button>
+<ion-content>
+    <div id="login">
+        <h1>LOGIN</h1>
+        <ion-item class="ion-margin-top" lines="block" color="dark">
+            <ion-input class="input" type="email" placeholder="E-mail" color="primary" [(ngModel)]="userLogin.email"></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-top" lines="block" color="dark">
+            <ion-input class="input" type="password" placeholder="Senha" color="primary" [(ngModel)]="userLogin.password"></ion-input>
+        </ion-item>
+    </div>
+
+    <div class="hide" id="register">
+        <h1>Cadastrar</h1>
+        <ion-item class="ion-margin-top" lines="block" color="dark">
+            <ion-input class="input" type="email" placeholder="E-mail" color="primary" [(ngModel)]="registerLogin.email"></ion-input>
+        </ion-item>
+        <ion-item class="ion-margin-top" lines="block" color="dark">
+            <ion-input class="input" type="password" placeholder="Senha" color="primary" [(ngModel)]="registerLogin.password"></ion-input>
+        </ion-item>
+    </div>
+
+    <ion-button class="ion-margin-top" (click)="login()" color="paste">
+        <span class="login">Entrar</span>
+    </ion-button>
+    <ion-button class="ion-margin-top" (click)="cardRegister()" color="paste">
+        <span class="login">Cadastre-se</span>
+    </ion-button>
+</ion-content>

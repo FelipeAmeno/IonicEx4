@@ -1,22 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { User } from '../../interfaces/user';
 
 import { IonicModule } from '@ionic/angular';
 
-import { LoginPageRoutingModule } from './login-routing.module';
+import { EditarSintomasPageRoutingModule } from './editar-sintomas-routing.module';
 
-import { LoginPage } from './login.page';
+import { EditarSintomasPage } from './editar-sintomas.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule,
-
+    EditarSintomasPageRoutingModule
   ],
-  declarations: [LoginPage]
+  declarations: [EditarSintomasPage]
 })
-export class LoginPageModule { }
+export class EditarSintomasPageModule {}
